@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style/style.css" />
+      <title>BMI Calculator</title>
+   </head>
+   <body>
+      <main>
+         <div class="main-screen">
+            <h1>Is your weight <span>perfect </span>?</h1>
+            <div class="inputs">
+               <label for="height-input">your <span>height</span></label>
+               <input
+                  id="height-input"
+                  type="number"
+                  min="0"
+                  max="270"
+                  placeholder="Put your height in cm"
+               />
+               <label for="weight-input">your <span>weight</span></label>
+               <input
+                  id="weight-input"
+                  type="number"
+                  min="0"
+                  max="200"
+                  placeholder="Put your weight in Kg"
+               />
+            </div>
+            <div class="button">
+               <button id="calc">Calculate</button>
+            </div>
+         </div>
+
+         <div class="r-screen">
+            <div class="result">
+               <h1 class="result-bmi">
+                  your BMI is <span id="bmi-r"></span>kg/m<sup>2</sup>
+               </h1>
+               <h1 class="result-text">
+                  You are <span id="weight-state"></span>
+               </h1>
+            </div>
+            <div class="button">
+               <button id="try-agine">Try agine</button>
+            </div>
+
+            <ul>
+               <li>
+                  the best weight to your hight is between
+                  <span id="best-weight"></span>.
+               </li>
+               <li>
+                  you have <span id="more-less"></span> to be in healthy weight.
+               </li>
+            </ul>
+         </div>
+      </main>
+
+      <script src="main.js"></script>
+   </body>
+</html>
